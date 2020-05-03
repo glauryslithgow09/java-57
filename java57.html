@@ -1,0 +1,56 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pelotas</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: darkkhaki;">
+
+
+    <script>
+        var vec = [100, , 200, , 300];
+        document.write('Los precios de las pelotas son:<br>');
+        var f;
+        for (f = 0; f < vec.length; f++) {
+            document.write(vec[f] + '*');
+        }
+        document.write('<br>');
+        document.write('Los precios de las pelotas son:<br>');
+        for (var indice in vec) {
+            document.write(vec[indice] + '*');
+        }
+    </script>
+
+
+</body>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+    <script>
+        window.onload = iniciar;
+
+        function iniciar() {
+            mayor(50, 34, 25, 97, 10, 28);
+        }
+
+        function mayor() {
+            var mayor1 = arguments[0];
+            for (var f = 1; f < arguments.length; f++) {
+                if (arguments[f] > mayor1)
+                    mayor1 = arguments[f];
+            }
+            document.write(mayor1);
+        }
+    </script>
+</body>
+
+</html>
